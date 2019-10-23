@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+
+   <body>
+      <div>
+         <nav class="navbar navbar-dark bg-dark" style="">
+            <a class="navbar-brand" href="/">Test task from the Emphasoft</a>
+         </nav>
+         <div style="margin:35px"></div>
+      </div>
+      <br>
+      <div>
+{% if request.user.is_authenticated %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+    </div>
+    <div class="col-sm">
+         <h1>Welcome </h1>
+    <h1>{{ name }}</h1>
+<h2>Random five VK friends:</h2>
+{% for fr in frends %}
+   <li> {{ fr }}</li>
+{% endfor %}
+    </div>
+    <div class="col-sm">
+
+    </div>
+  </div>
+</div>
+{% else %}
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+    </div>
+    <div class="col-sm">
+          <h1>Login</h1>
+    <a href="/login/vk-oauth2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/1200px-VK.com-logo.svg.png"
+              width="100" class="avatar-3" data-toggle="tooltip"
+                                title="Login via VKontakte"></a>
+    </div>
+
+    <div class="col-sm">
+
+    </div>
+  </div>
+</div>
+{% endif %}
+      </div>
+      <br>
+      <div>
+      </div>
+
+   </body>
+</html>
