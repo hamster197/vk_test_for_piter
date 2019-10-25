@@ -122,8 +122,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-SOCIAL_AUTH_VK_OAUTH2_KEY = '6452474'
-SOCIAL_AUTH_VK_OAUTH2_SECRET = 'T6mny0zuaolMrIRdMmHY'
+SOCIAL_AUTH_VK_OAUTH2_KEY = '***'
+SOCIAL_AUTH_VK_OAUTH2_SECRET = '***'
 LOGIN_REDIRECT_URL = '/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
